@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="main-container-div">
+  
+        <div class="header navbar">
+            <div id="header-left">
+                <a id="scribbler-logo" class="navbar-brand" href="#">ScriBBler</a>
+                <p id="scribbler-tagLine">Explore, Imagine, Create</p>
+            </div>
+            <div id="header-left">
+                <button class="btn btn-primary" id="signInBtn" data-toggle="modal" data-target="#signInModal" >Sign In</button>
+                <button class="btn btn-primary" id="signUpBtn" data-toggle="modal" data-target="#signUpModal" >Sign Up</button>
+            </div>
+        </div>
+
+        <div class="postButtons post-btn">
+
+            <!-- Insert code for All Posts & Create Post button here -->
+            <a href="html\bloglist.html"><button class="btn btn-primary post-btn-css"  >All Posts</button></a>
+            <button class="btn btn-primary post-btn-css" data-toggle="modal" data-target="#createPostModal">Create Posts</button>
+
+        </div>
+    </div>
+
+    <div>
+        <!-- Insert code for Sign In modal here -->
+    
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signInModalLabel">Welcome Back!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <div class="container">
+                                <p class="modal-subtitle">Sign In</p>   
+                                <hr>
+                                <label for="userName"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="userName" required>
+                            
+                                <label for="passcode"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="passcode" required>
+                                    
+                                <button class="modal-btn" type="submit">Login</button>
+                                <label>
+                                    <span style="margin-left: 135px;"></span> Not a member? <a  data-toggle="modal" data-target="#signUpModal" href="#" style="color: blue">Sign Up</a> </span> 
+                                </label >
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+    <!-- Insert code for Sign Up modal here -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signUpModalLabel">Get Started</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-body">
+                            <div class="container">
+                                <label for="fullName"><b>Full Name</b></label>
+                                <input type="text" placeholder="Enter Fullname" name="fullName" required>
+
+                                <label for="userName"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="userName" required>
+                            
+                                <label for="passcode"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="passcode" required>
+
+                                <label for="c-passcode"><b>Confirm Password</b></label>
+                                <input type="password" placeholder="Confirm Password" name="c-passcode" required>
+                                    
+                                <button class="modal-btn" type="submit">Sign Up</button>
+                            
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div >
+    	<!-- Insert code for Create Post modal here -->
+
+        <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="createPostModalModalLabel">Create Your Post</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="container">
+                            <label for="post-title"><b>Title</b></label>
+                            <input type="text" placeholder="Enter Title" name="post-title" required>
+
+                            <label for="post-content"><b>Content</b></label>
+                            <textarea rows="6" cols="58" placeholder="Enter Content..."></textarea>                
+                                
+                            <button class="modal-btn" type="submit">Create</button>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- Place all Javascript for header in this file -->
+    <script src="js\header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>

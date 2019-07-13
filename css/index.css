@@ -1,0 +1,30 @@
+body{
+   background: url('background1.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+.post-btn{
+   position: absolute;
+   left: 40%;
+   right: 60%;
+   top: 40%;
+   width: 100%;
+}
+
+.post-btn-css{
+   background-color: #ff9900;
+   color: black;
+   font-weight: bold;
+   border-block: white;
+}
+.post-btn-css:hover {
+   background-color: darkgoldenrod;
+
+}

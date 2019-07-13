@@ -1,0 +1,70 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+
+.blogContent{
+    padding: 3%;
+}
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+#edit-save-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: crimson;
+    border-color: white;
+    float: right;
+}
+
+#like-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: crimson;
+    border-color: white;
+}
+#comment-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: crimson;
+    border-color: white;
+}
+
+#like-count{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90%;
+}
+
+#comment-content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90%;
+    height: 60px;
+}
+
+#comment-heading{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+#comment-container{
+    background-color: #E8E8E8;
+    padding: 1%;
+}
+
+.final-comment{
+    background-color: white;
+    padding: 1%;
+    margin: 1%;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif; 
+}
